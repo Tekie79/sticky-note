@@ -30,7 +30,6 @@ body {
 }
 
 .container3 {
-    display: none;
     position: absolute;
     top: 26%;
     left: 40%;
@@ -71,7 +70,7 @@ svg {
     box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.65);
 }
 
-.footnote p{
+.footnote p {
     font-size: 20px;
     color: gray;
     position: fixed;
