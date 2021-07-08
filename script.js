@@ -61,6 +61,17 @@ const createNote = () => {
     node1.classList.add('new-note');
     node0.appendChild(node1);
 
+    //mouse hover effect
+    node0.addEventListener('mouseenter', () => {
+        node0.style.transform = 'scale(1.1)';
+    })
+    node0.addEventListener('mouseleave', () => {
+        node0.style.transform = 'scale(1)';
+    })
+    node0.addEventListener("dblclick", () => {
+        node0.remove();
+    })
+
     //insert the note in the container
     container2.insertAdjacentElement("beforeend", node0);
     document.getElementById('note-text').value = '';
